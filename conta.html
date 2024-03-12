@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numFactE = 34;
+        var numFactEu = 72;
+        var numFactEur = 140;
+        var numFactInt = 382;
+        var nouNumFact = 0;
+        var opcio = 0;
+        var numsFact = Array(34,72,140,382);
+
+        //while(opcio !=0){
+        do{
+            opcio = parseInt(prompt("Escull una opció:\n" + 
+        "1. Espanyola\n" + 
+        "2. Europea sense ROI\n" +
+        "3. Europea amb ROI\n" +
+        "4. Internacional\n" +
+        "0. Sortir"));
+        
+        if(opcio != 0){ 
+            nouNumFact = ++numsFact[(opcio - 1)];
+
+       /*switch(opcio){
+            case 1:
+                nouNumFact = ++numFactE;
+            break;
+            case 2:
+                nouNumFact = ++numFactEu;
+            break;
+            case 3:
+                nouNumFact = ++numFactEur;
+            break;
+            case 4:
+            nouNumFact = ++numFactInt;
+            break;
+            default:
+                alert("Has de dir una opcio corecta");
+
+        }
+*/
+    }
+            alert("El nou numero de Factura es: " + nouNumFact);
+        } while(opcio != 0);    
+
+    document.write("Adeu");
+    </script>
+</body>
+</html>

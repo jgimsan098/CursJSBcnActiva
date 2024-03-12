@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const TEMA = "go";
+        var edat = 0;
+        var majorEdat = false;
+        var matriculatText = "";
+        var matriculat = false;
+
+
+        edat = parseInt(prompt("Quina edat tens?"));
+        matriculatText = prompt("Estas matriculat?")
+        var nom = prompt("Com et dius?");
+        var assignatura = prompt("hola " + nom + ", què estàs estudiant?");
+        
+        matriculat = (matriculatText.toLowerCase == "si") ? true : false;
+        majorEdat = (edat >= 16) ? true : false;
+
+        if((assignatura == TEMA) || (majorEdat && matriculat)){
+        document.write("Molt bé " + nom + "!!! Segur que ets el/la millor estudiant de " + assignatura);
+        } else if(assignatura == ""){
+            document.write("Has d'introduir una assignatura.");
+        } else {
+            document.write("Molt bé " + nom + "!!! Segur que ets el/la millor estudiant de " + assignatura);
+        }
+    </script>
+</body>
+</html>
